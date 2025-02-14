@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Mulish;
+}
+
+#root {
+    width: 1110px;
+    height: 1050px;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+   
+}
+#header {
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+#header i{
+    margin: 0 5px
+}
+#header>div:nth-of-type(2){
+    display: flex;
+    padding: 5px;
+    gap: 25px;
+}
+#header>div:nth-of-type(2)>div:nth-of-type(2){
+    border: 3px solid #CCC ;
+    border-radius: 7px;
+}
+#header>div:nth-of-type(2)>*:hover{
+    cursor: pointer;
+}
+#header>div:nth-of-type(2)>*{
+    padding: 5px 10px;
+}
+#header span{
+    font-weight: 800;
+    margin: 0 7px;
+    font-size: 20px;
+}
+
+#container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.user{
+    border: 2px solid #BBB;
+    border-radius: 10px;
+    width: 130px;
+    height: 85px;
+    text-align: center;
+    position: relative;
+    background-color: #ddd;
+}
+
+.user:hover{
+    cursor: pointer;
+}
+
+.user:hover>.overlay2{
+    display: inline;
+}
+
+
+.user i:first-of-type {
+    height: 20px;
+    width: 25px;
+    /* border: 2px solid red; */
+    margin-top: 30px;
+}
+
+.user i:nth-of-type(2){
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    z-index: 12;
+}
+
+.footer{
+    padding: 7px;
+}
+
+.btnNewProfile{
+    padding: 0px 20px 09px 10px;
+    border: 2px solid #DDD;
+    width: max-content;
+    border-radius: 13px;
+    font-weight: 600;
+    background-color: #EEE;
+}
+
+.btnNewProfile:hover {
+    cursor: pointer;
+}
+
+.btnNewProfile span{
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.addWindow{
+    border: 2px solid black;
+    width: max-content;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    top: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    left: 430px;
+    display: none;
+    z-index: 20;
+}
+.addWindow input{
+    height: 28px;
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+#main{
+    position: relative;
+}
+
+.addButton{
+border: 2px solid #CCC;
+width: max-content;
+padding: 4px 8px;
+}
+
+.addButton:hover{
+    cursor: pointer;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10; 
+    display: none; 
+}
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10; 
+    border-radius: 10px;
+    display: none;
+}
+
+#container span{
+    color: #CCC;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#dayP{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+#dateP{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#BtnContainer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#BtnContainer>* {
+    border: 3px solid #BBB;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-weight: 600;
+    width: 110px;
+    position: relative;
+    z-index: 12;
+}
+#BtnContainer>*:hover{
+    cursor: pointer;
+}
+#BtnContainer>*:hover .overlay2{
+    display: inline;
+}
+#BtnContainer i{
+    margin-right: 8px;
+    margin-left: 3px;
+}
+
+
+/* Hakan ================================= */
+#walletContainer {
+    width: 700px; 
+    margin: 0;
+    text-align: center;
+}
+#walletTable {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#walletTable img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+#walletTable td:first-of-type{
+    display: flex;
+}
+#walletTable #first{
+    background-color: #6c5ce7;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    height: 25px;
+}
+#walletTable #second{
+    background-color: #8eee94;
+    height: 25px;
+    
+}
+#walletHeading {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.coinRow{
+    height: 25px;
+}
+div#balance{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/* End Hakan ============================= */
+/* Elci================================= */
+
+.toggle-buttons button {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: #666;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+  }
+  
+  .toggle-buttons button.active {
+    background-color: #4CAF50; /* Default Buy color */
+    color: white;
+  }
+  
+  #sellButton.active {
+    background-color: #f44336; /* Red for Sell */
+  }
+
+  #left h2{
+    text-align: center;
+  }
+
+  .toggle-buttons{
+    display: flex;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .input-group input{
+    height: 25px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+  }
+
+  .trading-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .action-button{
+    border: none;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+/* END ELCI */
+
+
+
+/* New changess */
+#tableContainer>div:first-of-type{
+    text-align: center;
+    border: 2px solid #CCC;
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+#tableContainer>div>img{
+    width: 30px;
+    margin: 0 10px;
+}
+#tableContainer>div>img:hover{
+    cursor: pointer;
+}
+
+@keyframes heartbeat{
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+.animated{
+    animation: heartbeat 1s ease infinite;
+}
+
+#tableContainer>div:nth-of-type(2){
+    border: 2px solid #CCC;
+    margin: 0 10px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+#tableContainer>div>div>img{
+    width: 30px;
+    margin: 0 10px;
+}
+#tableContainer>div:nth-of-type(2)>div:first-of-type{
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+#chart{
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border: 2px solid #CCC;
+    height: 400px;
+    position: relative;
+    z-index: 10;
+}
+#chart>div {
+    border: 1px solid black;
+}
+
+.candle:hover  {
+    cursor: pointer;
+}
+
+/* ======================================= */
+
+#mainBot{
+    display: flex;
+    gap: 10px;
+}
+
+
+div#left {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#chart {
+    position: relative;
+}
+
+div#Lower{
+    position: absolute;
+    bottom: -10px;
+    right: 60px;
+    border: none;
+    background-color: white;
+    padding: 0 20px;
+}
+div#upper{
+    position: absolute;
+    top: -10px;
+    right: 60px;
+    border: none;
+    background-color: white;
+    padding: 0 20px;
+}
+
+div#price{
+    width: 100%;
+    text-align: right;
+    border: none;
+    border-bottom: 1px dashed gray;
+    color: gray;
+    position: absolute;
+    left: 0;
+    z-index: -10;
+}
+
+.desc{
+    color: red;
+    font-weight: 600;
+}
+
+#resultLbl {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    width: 450px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+    background-image: url(./bg.png);
+    overflow: hidden;
+}
+
+#mario {
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    transition: all ease 0.8s;
+}
+
+#bird {
+    position: absolute;
+    left: 260px;
+    top: 90px;
+    transition: all ease 0.8s;
+}
+
+div:hover #mario {
+    left: 290px;
+}
+
+div:hover #bird {
+    left: 450px;
+    top: -20px;
+    transform: scale(3) rotate(360deg);
+
+    opacity: 0;
+
+}
