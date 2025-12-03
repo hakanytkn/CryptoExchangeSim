@@ -1,7 +1,7 @@
 # CTIS Crypto Trading Information System
 
 ## 🚀 Overview
-CTIS is a **Single Page Application (SPA)** built with **jQuery** that simulates a crypto trading platform. This project features a **custom state management system**, real-time wallet updates, interactive candlestick charts, and an intuitive user experience for trading different cryptocurrencies.
+Crypto Trading Information System is a **Single Page Application (SPA)** built with **jQuery** that simulates a crypto trading platform. This project features a **custom state management system**, real-time wallet updates, interactive candlestick charts, and an intuitive user experience for trading different cryptocurrencies.
 
 ## 🎯 Features
 
@@ -51,3 +51,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ---
 **⭐ If you like this project, consider giving it a star!**
+
